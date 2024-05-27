@@ -32,22 +32,23 @@
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
           </svg>
         </button>
-        <transition name="fade">
+        <transition data-aos="">
           <ul v-if="isMenuOpen" class="flex flex-col text-xl hover:cursor-pointer text-neutral-400">
-            <li class="hover:text-neutral-700">
+            <li class="hover:text-neutral-700 hover:dark:text-neutral-100"">
               <a>HOME</a>
             </li>
-            <li class="hover:text-neutral-700">
+            <li class="hover:text-neutral-700 hover:dark:text-neutral-100"">
               <a>ABOUT</a>
             </li>
-            <li class="hover:text-neutral-700">
+            <li class="hover:text-neutral-700 hover:dark:text-neutral-100"">
               <a>CONTACT</a>
             </li>
             <li>
-            <button @click="toggleDarkMode">
-              <i class="fa-solid fa-moon hover:text-neutral-700" title="Dark Mode"></i>
-            </button>
-          </li>
+              <button @click="toggleDarkMode">
+                <i v-if="!darkMode" class="fa-solid fa-moon hover:text-neutral-700" title="Dark Mode"></i>
+                <i v-else class="fa-solid fa-sun hover:text-neutral-100" title="Light Mode"></i>
+              </button>
+            </li>
           </ul>
         </transition>
       </div>
