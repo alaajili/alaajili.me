@@ -1,9 +1,9 @@
 
 <template>
   <div class="oveflow-auto">
-    <Navbar/>
-    <Profile/>
-    <Skills/>
+    <Navbar @scroll-to="scrollTo"/>
+    <div id="profile"><Profile/></div>
+    <div id="skills"><Skills/></div>
     <Footer/>
   </div>
 </template>
@@ -20,7 +20,17 @@ export default {
     Profile,
     Skills,
     Footer,
+  },
+
+  methods: {
+    scrollTo(sectionId) {
+      const section = document.getElementById(sectionId);
+      if (section) {
+        section.scrollIntoView({ behavior: 'smooth'});
+      }
+    }
   }
+
 };
 
 </script>

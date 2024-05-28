@@ -1,19 +1,19 @@
 <template>
   <div>
     <nav class="fixed top-0 z-10 w-screen font-ubuntu flex flex-wrap bg-neutral-100 dark:bg-neutral-800 justify-between items-center py-4 px-8 sm:px-16 md:px-32 border-b border-neutral-400">
-      <a class="flex text-neutral-700 dark:text-neutral-100 text-xl font-extrabold line-through hover:underline hover:cursor-pointer">
+      <a @click="scrollTo('profile')" class="flex text-neutral-700 dark:text-neutral-100 text-xl font-extrabold line-through hover:underline hover:cursor-pointer">
         alaajili<p class="text-green-500">.me</p>
       </a>
       <div class="hidden md:flex">
         <ul class="flex space-x-8 font-bold hover:cursor-pointer text-neutral-400">
-          <li class="hover:text-neutral-700 hover:dark:text-neutral-100">
-            <a>HOME</a>
+          <li @click="scrollTo('skills')" class="hover:text-neutral-700 hover:dark:text-neutral-100">
+            <a >Skills</a>
           </li>
           <li class="hover:text-neutral-700 hover:dark:text-neutral-100">
-            <a>ABOUT</a>
+            <a>Projects</a>
           </li>
           <li class="hover:text-neutral-700 hover:dark:text-neutral-100">
-            <a>CONTACT</a>
+            <a>Contact</a>
           </li>
           <li>
             <button @click="toggleDarkMode">
@@ -35,13 +35,13 @@
         <transition name="fade">
           <ul v-if="isMenuOpen" class="flex flex-col text-xl hover:cursor-pointer text-neutral-400">
             <li class="hover:text-neutral-700 hover:dark:text-neutral-100">
-              <a @click="isMenuOpen = !isMenuOpen">HOME</a>
+              <a>Skills</a>
             </li>
             <li class="hover:text-neutral-700 hover:dark:text-neutral-100">
-              <a>ABOUT</a>
+              <a>Projects</a>
             </li>
             <li class="hover:text-neutral-700 hover:dark:text-neutral-100">
-              <a>CONTACT</a>
+              <a>Contact</a>
             </li>
             <li>
               <button @click="toggleDarkMode">
@@ -84,14 +84,20 @@ export default {
       }
       Cookies.set('darkMode', this.darkMode);
     },
+
+    scrollTo(sectionId) {
+      this.$emit('scroll-to', sectionId);
+    }
   },
+
   mounted() {
     if (this.darkMode) {
       document.documentElement.classList.add('dark');
     } else {
       document.documentElement.classList.remove('dark');
     }
-  },
+  }
+
 };
 </script>
 
