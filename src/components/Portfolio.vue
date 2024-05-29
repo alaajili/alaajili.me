@@ -28,7 +28,7 @@ export default {
         {
           id: 1,
           name: 'Ft_Transcendence',
-          image: "../assets/pong.jpg",
+          image: "/src/assets/pong.jpg",
           description: 'REAL-TIME Web Game + Social Network',
           techs: ['React.js', 'Nest.js', 'Socket.io', 'PostgreSql', 'TypeORM'],
           link: 'http://example.com/project1'
@@ -36,7 +36,7 @@ export default {
         {
           id: 2,
           name: 'Inception',
-          image: '../assets/containers.jpg',
+          image: '/src/assets/containers.jpg',
           description: 'A System Adminitration related project using Docker and Docker-Compose',
           techs: ['Docker', 'Docker-Compose', 'Linux', 'Bash', 'Nginx' , 'SSL', 'MariaDB'],
           link: 'http://example.com/project2'
@@ -44,7 +44,7 @@ export default {
         {
           id: 3,
           name: 'Webserv',
-          image: '../assets/webserv.jpg',
+          image: '/src/assets/webserv.jpg',
           description: 'A project where we had to implement a web server in C++',
           techs: ['C', 'C++', 'HTTP', 'HTTPS', 'CGI', 'Nginx', 'Non-Blocking I/O'],
           link: 'http://example.com/project2'
