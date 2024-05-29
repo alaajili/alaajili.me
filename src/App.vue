@@ -2,8 +2,9 @@
 <template>
   <div class="oveflow-auto">
     <Navbar @scroll-to="scrollTo"/>
-    <div id="profile"><Profile/></div>
-    <div id="skills"><Skills/></div>
+    <Profile id="profile"/>
+    <Skills id="skills"/>
+    <Portfolio id="portfolio"/>
     <Footer/>
   </div>
 </template>
@@ -13,12 +14,14 @@ import Footer from './components/Footer.vue';
 import Navbar from './components/Navbar.vue';
 import Profile from './components/Profile.vue';
 import Skills from './components/Skills.vue';
+import Portfolio from './components/Portfolio.vue';
 
 export default {
   components: {
     Navbar,
     Profile,
     Skills,
+    Portfolio,
     Footer,
   },
 

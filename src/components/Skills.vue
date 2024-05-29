@@ -1,8 +1,8 @@
 <template>
-  <div class="font-ubuntu bg-neutral-100 dark:bg-neutral-800 text-neutral-700 dark:text-neutral-100">
-    <h1 class="font-ubuntu text-2xl font-extrabold text-center pt-8 pb-4">skills.</h1>
+  <div class="font-ubuntu bg-neutral-100 dark:bg-neutral-800 text-neutral-700 dark:text-neutral-100 p-4">
+    <h1 class="font-ubuntu text-2xl font-extrabold text-center py-4">skills.</h1>
     <hr class="w-1/2 border-b border-neutral-300 mx-auto">
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 px-8 lg:px-20 text-center">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 px-8 lg:px-20 text-center">
       <div data-aos="fade-up" data-aos-once="true" data-aos-duration="1000" data-aos-delay="100" class="p-8 space-y-4">
         <i class="fa-solid fa-code text-4xl text-green-500"></i>
         <h2 class="font-bold text-xl">Languages</h2>

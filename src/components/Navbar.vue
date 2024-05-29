@@ -6,17 +6,17 @@
       </a>
       <div class="hidden md:flex">
         <ul class="flex space-x-8 font-bold hover:cursor-pointer text-neutral-400">
-          <li @click="scrollTo('skills')" class="hover:text-neutral-700 hover:dark:text-neutral-100">
+          <li @click="scrollTo('skills')" class="hover:text-neutral-700 hover:dark:text-neutral-100 hover:scale-110">
             <a >Skills</a>
           </li>
-          <li class="hover:text-neutral-700 hover:dark:text-neutral-100">
-            <a>Projects</a>
+          <li @click="scrollTo('portfolio')" class="hover:text-neutral-700 hover:dark:text-neutral-100 hover:scale-110">
+            <a>Portfolio</a>
           </li>
-          <li class="hover:text-neutral-700 hover:dark:text-neutral-100">
+          <li class="hover:text-neutral-700 hover:dark:text-neutral-100 hover:scale-110">
             <a>Contact</a>
           </li>
           <li>
-            <button @click="toggleDarkMode">
+            <button @click="toggleDarkMode" class="hover:scale-110">
               <i v-if="!darkMode" class="fa-solid fa-moon hover:text-neutral-700" title="Dark Mode"></i>
               <i v-else class="fa-solid fa-sun hover:text-neutral-100" title="Light Mode"></i>
             </button>
