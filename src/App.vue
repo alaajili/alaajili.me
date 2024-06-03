@@ -5,6 +5,7 @@
     <Profile id="profile"/>
     <Skills id="skills"/>
     <Portfolio id="portfolio"/>
+    <Contact id="contact"/>
     <Footer/>
   </div>
 </template>
@@ -15,6 +16,7 @@ import Navbar from './components/Navbar.vue';
 import Profile from './components/Profile.vue';
 import Skills from './components/Skills.vue';
 import Portfolio from './components/Portfolio.vue';
+import Contact from './components/Contact.vue';
 
 export default {
   components: {
@@ -22,6 +24,7 @@ export default {
     Profile,
     Skills,
     Portfolio,
+    Contact,
     Footer,
   },
 

@@ -12,7 +12,7 @@
           <li @click="scrollTo('portfolio')" class="hover:text-neutral-700 hover:dark:text-neutral-100 hover:scale-110">
             <a>Portfolio</a>
           </li>
-          <li class="hover:text-neutral-700 hover:dark:text-neutral-100 hover:scale-110">
+          <li @click="scrollTo('contact')" class="hover:text-neutral-700 hover:dark:text-neutral-100 hover:scale-110">
             <a>Contact</a>
           </li>
           <li>
@@ -34,13 +34,13 @@
         </button>
         <transition name="fade">
           <ul v-if="isMenuOpen" class="flex flex-col text-xl hover:cursor-pointer text-neutral-400">
-            <li class="hover:text-neutral-700 hover:dark:text-neutral-100">
+            <li @click="scrollTo('skills')" class="hover:text-neutral-700 hover:dark:text-neutral-100">
               <a>Skills</a>
             </li>
-            <li class="hover:text-neutral-700 hover:dark:text-neutral-100">
-              <a>Projects</a>
+            <li @click="scrollTo('portfolio')" class="hover:text-neutral-700 hover:dark:text-neutral-100">
+              <a>Portfolio</a>
             </li>
-            <li class="hover:text-neutral-700 hover:dark:text-neutral-100">
+            <li @click="scrollTo('contact')" class="hover:text-neutral-700 hover:dark:text-neutral-100">
               <a>Contact</a>
             </li>
             <li>
