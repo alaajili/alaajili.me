@@ -3,7 +3,7 @@
     <div data-aos="fade-right" data-aos-duration="1000" data-aos-delay="500" class="flex-col items-center justify-center lg:border-r lg:border-neutral-400 lg:pr-8">
       <img
         class="rounded-full min-w-48 h-48 object-cover shadow-lg"
-        src="../assets/alaajili.jpg"
+        src="/assets/alaajili.jpg"
         alt="Profile picture"
       />
     </div>
