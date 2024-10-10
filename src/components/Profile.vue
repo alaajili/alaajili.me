@@ -18,7 +18,7 @@
       </p>
       <span class="flex justify-center lg:justify-end pt-6 space-x-4">
         <a
-          href="https://www.linkedin.com/in/alaajili/"
+          href="https://www.linkedin.com/in/abderrahmanelaajili/"
           target="_blank"
           class="text-blue-500 hover:text-neutral-50 hover:dark:text-neutral-700 hover:bg-blue-500 border border-blue-500 rounded px-4 py-2"
         >
@@ -32,14 +32,14 @@
           <i class="fab fa-github"></i>
         </a>
         <a
-          href="https://github.com/alaajili"
+          href="https://www.facebook.com/abderrahmane.laajili.54/"
           target="_blank"
           class="text-blue-500 hover:text-blue-50 hover:dark:text-neutral-700 hover:bg-blue-500 border border-blue-500 rounded px-4 py-2"
         >
           <i class="fa-brands fa-facebook-f"></i>
         </a>
         <a
-          href="https://github.com/alaajili"
+          href="https://x.com/_r4ndom___"
           target="_blank"
           class="text-blue-500 hover:text-blue-50 hover:dark:text-neutral-700 hover:bg-blue-500 border border-blue-500 rounded px-4 py-2"
         >
